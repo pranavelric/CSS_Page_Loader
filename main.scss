@@ -1,0 +1,104 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+.main_loading{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+background-color: hsl(206,21%,94%);
+
+display: grid;
+place-items: center;
+
+
+}
+
+
+.center_loading{
+    position: relative;
+    width: 15rem;
+    height: 15rem;
+
+}
+
+span{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5rem;
+    height: 5rem;
+    background-color: darkblue;
+    animation: load 2s linear infinite;
+
+box-shadow: 0 0.28rem 0.22rem rgba(0,0,0, 0.034),
+0 0.67rem 0.53rem rgba(0,0,0, 0.048),
+0 1.25rem 1rem rgba(0,0,0, 0.034),
+0 2.23rem 1.79rem rgba(0,0,0, 0.072),
+0 4.18rem 3.34rem rgba(0,0,0, 0.034),
+0 10rem 8rem rgba(0,0,0, 0.012);
+
+&:nth-child(2){
+    animation-delay: 0.67s;
+}
+&:nth-child(3){
+    animation-delay: 1.32s;
+}
+
+
+}
+
+
+
+@keyframes load{
+    0%{
+        left: 0;
+        top: 0;
+    }
+    12.5%{
+        left: 50%;
+        top: 0;
+    }
+    25%{
+        left: 50%;
+        top: 0;
+    }
+    37.5%{
+        left: 50%;
+    top: 50%;
+    }
+    50%{
+        left: 50%;
+        top: 50%;
+    }
+    
+    62.5%{
+        left: 0;
+        top: 50%;
+    }
+
+    75%{
+        left: 0;
+        top: 50%;
+    }
+
+   87.5%{
+        left: 0;
+        top: 0;
+    }
+
+    100%{
+        left: 0;
+        top: 0;
+    }
+    
+
+
+}
+
+
